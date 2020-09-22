@@ -5,6 +5,7 @@
  * Assignment 01
  *******************************/
  
+help with command line arguments
  http://www.cplusplus.com/articles/DEN36Up4/
  
  log function
