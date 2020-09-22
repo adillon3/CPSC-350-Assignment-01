@@ -19,14 +19,9 @@ using namespace std;
 class Statistics
 {
 public:
+	//cosntructor and destructor
 	Statistics();
 	~Statistics();
-
-/*
- * ERROR CHECK FOR DIVIDE BY ZERO!!!!!!!!!!!!!!!!!!!!!
- *
- * AND ROOT OF A NEGATIVE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- */
 
 	void ProcessFile(string fileName, ofstream& oFile);
 	int GetNumLines(ifstream& inFile);
@@ -39,12 +34,9 @@ public:
 	string ToUpperString(string myString);
 	void PrintProbabilityOfNucleotideBigram(ifstream& inFile, ofstream& oFile, int sum);
 	void InitilizePrivateVariables();
-
 	void Append1000Strings(ofstream& oFile, float standardDev, float mean);
-
-
-	//void PrintProbabilityOfNucleotideBigram(ofstream oFile, int sum);
 	bool CheckLineForInvalidNucleotides(string myString);
+	
 private:
 	int aCount;
 	int cCount;
